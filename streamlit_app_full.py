@@ -14,7 +14,7 @@ def visualize_cube(cube_file_path, alpha):
         cube_data = cube_file.read()
     viewer.addModel(cube_data, "cube")
     
-    viewer.setStyle( {'stick': {}, 'sphere': {'radius': 0.5})    #{'stick': {}})
+    viewer.setStyle( {'stick': {}, 'sphere': {'radius': 0.5}})    #{'stick': {}})
     viewer.addVolumetricData(cube_data, "cube", {'isoval': 0.02, 'color': "blue", 'alpha': alpha})
     viewer.addVolumetricData(cube_data, "cube", {'isoval': -0.02, 'color': "red", 'alpha': alpha})
     viewer.zoomTo()
